@@ -1,0 +1,24 @@
+import java.util.Scanner;
+public class Pepper {
+    public static void main(String[] args) {
+
+
+        Scanner scanner = new Scanner(System.in);
+
+
+        System.out.println("Enter the value of pepper spice");
+
+
+        double spice = scanner.nextDouble();
+
+
+        boolean spiceLevel = spice > 8;
+
+
+        if(spiceLevel) {
+            System.out.println("Is spice take care!");
+        } else {
+            System.out.println("Isn't spice enjoy!");
+        }
+    }
+}
