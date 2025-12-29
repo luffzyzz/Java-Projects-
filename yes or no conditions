@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+
+public class PetShop {
+    public static void main(String[] args) {
+
+
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("You are a cat owner from Pets Pets Pets store?");
+        System.out.println("Answer with yes or no");
+
+
+        String answer = scanner.next();
+
+
+        boolean isCatOwner = answer.equalsIgnoreCase("yes");
+
+
+        if(isCatOwner) {
+            System.out.println("Congratulations! You received a coupon with 20% off select cat items your code is: MEOW2025");
+        } else {
+            System.out.println("Welcome to the Pets Pets Pets store!");
+        }
+    }
+}
+
