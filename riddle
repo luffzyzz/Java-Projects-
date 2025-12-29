@@ -1,0 +1,49 @@
+/* I speak without a mouth and hear without ears
+   I have no body, but I come alive with the wind
+   What am I?
+ create a program that asks the user for their answer to the riddle
+ and end the program with a congratulations phare!
+*/
+
+
+import java.util.Scanner;
+public class Riddle {
+    public static void main(String[] args) {
+
+
+       // riddle  output
+       System.out.println("I speak without a mouth and hear without ears I have no body, but I come alive with the wind. What am I?");
+
+
+       // object used for read the input from the user
+       Scanner scanner = new Scanner(System.in);
+
+
+       // output: Enter your name
+       System.out.println("Enter your answer...");
+
+
+       // method used for read strings
+       String answer = scanner.nextLine();
+
+
+       System.out.println(answer);
+
+
+       // data type used to
+       boolean correctA = true;
+
+
+       if (answer.equals("echo")) {
+           correctA = true;
+           System.out.println("Correct answer!");
+       }
+       else {
+           System.out.println("Wrong answer, try again");
+       }
+    }
+}
+
+
+
+
